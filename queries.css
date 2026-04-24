@@ -1,0 +1,157 @@
+/* ══════════════════════════════════════
+   TATAKAE — Media Queries
+   queries.css
+   Pair with: style.css
+══════════════════════════════════════ */
+
+/* ── HEADER ── */
+@media (max-width: 768px) {
+  .nav-links li.hide-mobile {
+    display: none;
+  }
+
+  .nav-container {
+    padding: 0 20px;
+  }
+}
+
+/* ── HERO ── */
+@media (max-width: 600px) {
+  .hero-content {
+    padding: 0 20px;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ── FEATURES ── */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-item {
+    padding: 40px 32px 40px 0;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .feature-item:nth-child(2) {
+    border-right: none;
+    padding-right: 0;
+    padding-left: 32px;
+  }
+
+  .feature-item:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .feature-item:nth-child(3),
+  .feature-item:nth-child(4) {
+    border-bottom: none;
+  }
+
+  .feature-item:nth-child(4) {
+    border-right: none;
+    padding-right: 0;
+    padding-left: 32px;
+  }
+
+  .feature-desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .features {
+    padding: 80px 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-item {
+    border-right: none !important;
+    border-bottom: 1px solid #2a2a2a !important;
+    padding: 40px 0 !important;
+  }
+
+  .feature-item:last-child {
+    border-bottom: none !important;
+  }
+}
+
+/* ── PRODUCTS ── */
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .products {
+    padding: 80px 20px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ── CTA ── */
+@media (max-width: 600px) {
+  .cta-section {
+    padding: 80px 20px;
+  }
+
+  .cta-section::after {
+    display: none;
+  }
+
+  .btn-cta-main {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ── FOOTER ── */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 64px 20px 32px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
