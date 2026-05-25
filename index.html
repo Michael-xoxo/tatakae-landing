@@ -1,15 +1,106 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <head>
+      <!-- ══ CORE ══════════════════════════════════════════════════════════ -->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>TATAKAE &mdash; Built for Those Who Fight Back</title>
+      <meta
+        name="description"
+        content="Premium gymwear engineered for people who train past the point most stop. Shop the Tatakae collection."
+      />
+      <meta name="author" content="TATAKAE" />
+      <link rel="canonical" href="https://tatakae-landing.netlify.app" />
+      <!-- ↑ PENDING STEP 5 — update to real Netlify or custom domain URL -->
+
+      <!-- ══ THEME ══════════════════════════════════════════════════════════ -->
+      <meta name="theme-color" content="#e50914" />
+
+      <!-- ══ FAVICON — PENDING STEP 2 ══════════════════════════════════════ -->
+      <link rel="icon" href="/favicon.ico" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/img/favicon-32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/img/favicon-16.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/img/apple-touch-icon.png"
+      />
+      <link rel="manifest" href="/manifest.webmanifest" />
+      <!-- ↑ manifest file itself is PENDING STEP 3 -->
+
+      <!-- ══ OPEN GRAPH ═════════════════════════════════════════════════════ -->
+      <meta
+        property="og:title"
+        content="TATAKAE &mdash; Built for Those Who Fight Back"
+      />
+      <meta
+        property="og:description"
+        content="Premium gymwear engineered for people who train past the point most stop."
+      />
+      <meta
+        property="og:image"
+        content="https://tatakae-landing.netlify.app/img/og-preview.jpg"
+      />
+      <!-- ↑ image file PENDING STEP 4 — URL update PENDING STEP 5 -->
+      <meta property="og:url" content="https://tatakae-landing.netlify.app" />
+      <!-- ↑ PENDING STEP 5 — update to real domain -->
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="TATAKAE" />
+
+      <!-- ══ TWITTER / X ════════════════════════════════════════════════════ -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="TATAKAE &mdash; Built for Those Who Fight Back"
+      />
+      <meta
+        name="twitter:description"
+        content="Premium gymwear engineered for people who train past the point most stop."
+      />
+      <meta
+        name="twitter:image"
+        content="https://tatakae-landing.netlify.app/img/og-preview.jpg"
+      />
+      <!-- ↑ image file PENDING STEP 4 — URL update PENDING STEP 5 -->
+
+      <!-- ══ FONTS ══════════════════════════════════════════════════════════ -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- ══ STYLES ══════════════════════════════════════════════════════════ -->
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="queries.css" />
+    </head>
+    <!-- <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TATAKAE</title>
+    <meta name="author" content="TATAKAE" />
+    <meta name="theme-color" content="#e50914" />
+    <title>TATAKAE &mdash; Built for Those Who Fight Back</title>
+    <meta
+      name="description"
+      content="Premium gymwear engineered for people who train past the point most stop. Shop the Tatakae collection."
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="queries.css" /> -->
   </head>
   <body>
     <!-- HEADER -->
@@ -39,7 +130,7 @@
         <p class="hero-sub">
           The wall isn't in your way.<br />
           <strong>The wall is the way.</strong><br />
-          Gear built for people who already know what it costs to keep going.
+          Gear built for people who know what it costs to keep going.
         </p>
         <div class="hero-ctas">
           <a href="#shop" class="cta-primary">Shop the Collection</a>
@@ -78,7 +169,7 @@
               Form Meets <span class="red">Force</span>
             </h3>
             <p class="feature-desc">
-              Technical fit engineered to move with you — not against you. Every
+              Technical fit engineered to move with you, not against you. Every
               cut has a reason.
             </p>
           </div>
@@ -103,7 +194,7 @@
             </h3>
             <p class="feature-desc">
               Fabric that survives the grind, wash after wash. Built for the
-              long game — just like you.
+              long game, just like you.
             </p>
           </div>
         </div>
@@ -123,11 +214,16 @@
         <div class="products-grid">
           <div class="product-card">
             <div class="product-img">
-              <span class="product-img-label">Image Placeholder</span>
+              <!-- <span class="product-img-label">Image Placeholder</span> -->
+              <img
+                src="img/product-01-Thights.jpg"
+                alt="The Grind Thights"
+                class="product-image"
+              />
             </div>
             <div class="product-info">
               <span class="product-category">Compression</span>
-              <h3 class="product-name">The Grind Tights</h3>
+              <h3 class="product-name">The Grind Thights</h3>
               <div class="product-bottom">
                 <span class="product-price">$74</span>
                 <a href="#" class="btn-product">Shop</a>
@@ -137,7 +233,12 @@
 
           <div class="product-card elite">
             <div class="product-img">
-              <span class="product-img-label">Image Placeholder</span>
+              <!-- <span class="product-img-label">Image Placeholder</span> -->
+              <img
+                src="img/product-02-Hoodie.jpg"
+                alt="The Burden Hoodie"
+                class="product-image"
+              />
             </div>
             <div class="product-info">
               <span class="product-category">Outerwear</span>
@@ -151,7 +252,12 @@
 
           <div class="product-card">
             <div class="product-img">
-              <span class="product-img-label">Image Placeholder</span>
+              <!-- <span class="product-img-label">Image Placeholder</span> -->
+              <img
+                src="img/product-03-Shorts.jpg"
+                alt="The Push Shorts"
+                class="product-image"
+              />
             </div>
             <div class="product-info">
               <span class="product-category">Shorts</span>
@@ -165,7 +271,12 @@
 
           <div class="product-card">
             <div class="product-img">
-              <span class="product-img-label">Image Placeholder</span>
+              <!-- <span class="product-img-label">Image Placeholder</span> -->
+              <img
+                src="img/product-04-Tank.jpg"
+                alt="The Stripped Tank"
+                class="product-image"
+              />
             </div>
             <div class="product-info">
               <span class="product-category">Tank</span>
@@ -186,7 +297,7 @@
         <p class="cta-label">The Final Push</p>
         <h2 class="cta-headline">Stop Waiting.<br />Start Wearing.</h2>
         <p class="cta-sub">
-          You've already done the hard part — <strong>you kept going.</strong
+          You've already done the hard part; <strong>you kept going.</strong
           ><br />
           The gear should match that. Shop the full Tatakae collection now.
         </p>
